@@ -9,7 +9,8 @@ const APIKey = 'a230065d081d26a7ff3f72cd68a66644';
 class App extends Component {
   state = {
     value: "",
-    date: '',
+    day: '',
+    time: '',
     city: '',
     sunrise: '',
     sunset: '',
@@ -39,13 +40,15 @@ class App extends Component {
     })
     .then(response => response.json())
     .then(data => {
-      const time = new Date().toLocaleString()
+      const day = new Date().toLocaleDateString()
+      const time = new Date().toLocaleTimeString()
       this.setState({
-        date: time,
+        day,
+        time,
         city: this.state.value,
         sunrise: data.sys.sunrise,
         sunset: data.sys.sunset,
-        temp: data.main.temp,
+        temp: (data.main.temp - 273,15),
         pressure: data.main.pressure,
         wind: data.wind.speed,
         error: false,

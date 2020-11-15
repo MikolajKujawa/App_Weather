@@ -1,4 +1,5 @@
 import React from 'react';
+import '../style/Result.css';
 
 const Result = (props) => {
     
@@ -11,14 +12,14 @@ const Result = (props) => {
         const sunsetTime = new Date(sunset * 1000).toLocaleTimeString()
         content = (
             <div>
-                <h3>Wyniki wyszukiwania dla: <em>{city}</em></h3>
-                <h4>Dzień: {day}</h4>
-                <h4>Godzina: {time}</h4>
-                <h4>Temperatura: {temp}&#176;C</h4>
-                <h4>Wschód słońca o: {sunriseTime}</h4>
-                <h4>Zachód słońca o: {sunsetTime}</h4>
-                <h4>Siła wiatru: {wind}m/s</h4>
-                <h4>Ciśnienie: {pressure}hPa</h4>
+                <h1>Wyniki wyszukiwania dla: <em>{city}</em></h1>
+                <h2>Dzień: {day}</h2>
+                <h2>Godzina: {time}</h2>
+                <h2>Temperatura: {temp}&#176;C</h2>
+                <h2>Wschód słońca o: {sunriseTime}</h2>
+                <h2>Zachód słońca o: {sunsetTime}</h2>
+                <h2>Siła wiatru: {wind}m/s</h2>
+                <h2>Ciśnienie: {pressure}hPa</h2>
             </div>
         )
     }

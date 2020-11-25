@@ -1,68 +1,21 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap)
-
 .App
     width: 700px
-    height: 100px
     margin-top: 30vh
     margin-left: auto
     margin-right: auto
     font-family: 'Roboto', sans-serif
 
+@media (orientation:portrait) and (max-width: 1024px)
+    .App
+        width: 80%
+        margin-top: 20%
 
-// @media(orientation:portrait) and (max-width:1024px){
-//     .App{
-//         margin-top: 20vh;
-//         width: 850px;
-//     }    
-// }
+/*orientation landscape*/
+@media (orientation:landscape) and (max-width:1366px)
+    .App
+        margin-top: 10%
+        width: 80%
 
-// @media(orientation:portrait) and (max-width:768px){
-//     .App{
-//         width: 650px;
-//     }
-// }
-
-// @media(orientation:portrait) and (max-width:414px){
-//     .App{
-//         margin-top: 15vh;
-//         width: 390px;
-//     }
-// }
-
-// @media(orientation:portrait) and (max-width:375px){
-//     .App{
-//         width: 330px;
-//     }
-// }
-
-// @media(orientation:portrait) and (max-width:280px){
-//     .App{
-//         width: 250px;
-//     }
-// }
-
-// /*orientation landscape*/
-// @media(orientation:landscape) and (max-width:1366px){
-//     .App{
-//         margin-top: 12vh;
-//         width: 800px;
-//     }
-// }
-
-// @media(orientation:landscape) and (max-width:1024px){
-//     .App{
-//         margin-top: 10vh;
-//     }
-// }
-
-// @media(orientation:landscape) and (max-width:823px){
-//     .App{
-//         width: 600px;
-//     }
-// }
-
-// @media(orientation:landscape) and (max-width:640px){
-//     .App{
-//         width: 500px;
-//     }
-// }
+@media (orientation:landscape) and (max-width:823px)
+    .App
+        margin-top: 5%

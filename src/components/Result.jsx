@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/Result.css';
+import '../style/Result.sass';
 
 const Result = (props) => {
     

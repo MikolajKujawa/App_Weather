@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import '../style/App.css';
+import '../style/App.sass';
 import Form from './Form';
 import Result from './Result';
 

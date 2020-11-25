@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap' rel='stylesheet');
+
+body{ 
+  margin: 0;
+  background-image:  url('../images/weather.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}

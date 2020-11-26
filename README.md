@@ -22,7 +22,5 @@ Aplication gets data via API with fetch method.
 * Sass: <i>1.29.0</i>
 
 ## Other Informations
-```
 Whis web was created by **Mikołaj Kujawa** <br/>
-**Online: https://check-yourweather.netlify.app** 
-```
+**Online:** https://check-yourweather.netlify.app

@@ -48,7 +48,7 @@ class App extends Component {
           city: this.state.value,
           sunrise: data.sys.sunrise,
           sunset: data.sys.sunset,
-          temp: (data.main.temp - 273,15),
+          temp: (data.main.temp - 273.15).toFixed(2),
           pressure: data.main.pressure,
           wind: data.wind.speed,
           error: false,

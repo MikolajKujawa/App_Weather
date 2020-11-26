@@ -24,5 +24,5 @@ Aplication gets data via API with fetch method.
 ## Other Informations
 ```
 Whis web was created by **Mikołaj Kujawa** <br/>
-**Online:** 
+**Online: https://check-yourweather.netlify.app** 
 ```

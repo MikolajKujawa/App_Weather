@@ -14,7 +14,7 @@ Aplication gets data via API with fetch method.
 
 ## Features
 * Gets current weather data
-* Dynamic data validation
+* Data validation
 * Mobile support
 
 ## Technologies

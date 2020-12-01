@@ -9,11 +9,10 @@ const APIKey = 'a230065d081d26a7ff3f72cd68a66644';
 class App extends Component {
   state = {
     value: "",
-    day: '',
-    time: '',
     city: '',
     sunrise: '',
     sunset: '',
+    feel_temp: '',
     temp: '',
     pressure: '',
     wind: '',
@@ -21,9 +20,12 @@ class App extends Component {
   }
   
   handleInputChange = (e) => {
-    this.setState({
+    if(e.target.value.length<=20){
+      this.setState({
       value: e.target.value
-    })
+      })
+    }
+    
   }
 
   componentDidUpdate(prevProps, prevState){
@@ -40,14 +42,11 @@ class App extends Component {
       })
       .then(response => response.json())
       .then(data => {
-        const day = new Date().toLocaleDateString()
-        const time = new Date().toLocaleTimeString()
         this.setState({
-          day,
-          time,
           city: this.state.value,
           sunrise: data.sys.sunrise,
           sunset: data.sys.sunset,
+          feel_temp: (data.main.feels_like - 273.15).toFixed(2),
           temp: (data.main.temp - 273.15).toFixed(2),
           pressure: data.main.pressure,
           wind: data.wind.speed,

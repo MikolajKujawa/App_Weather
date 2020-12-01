@@ -3,7 +3,7 @@ import '../style/Result.sass';
 
 const Result = (props) => {
     
-    const {day, time, city, sunrise, sunset, temp, pressure, wind, error} = props.weather;
+    const {city, sunrise, sunset, temp, feel_temp, pressure, wind, error} = props.weather;
 
     let content = null;
 
@@ -13,9 +13,8 @@ const Result = (props) => {
         content = (
             <div>
                 <h1>Wyniki wyszukiwania dla: <em>{city}</em></h1>
-                <h2>Dzień: {day}</h2>
-                <h2>Godzina: {time}</h2>
                 <h2>Temperatura: {temp}&#176;C</h2>
+                <h2>Temperatura odczuwalna: {feel_temp}&#176;C</h2>
                 <h2>Wschód słońca o: {sunriseTime}</h2>
                 <h2>Zachód słońca o: {sunsetTime}</h2>
                 <h2>Siła wiatru: {wind}m/s</h2>
